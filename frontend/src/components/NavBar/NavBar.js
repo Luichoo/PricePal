@@ -26,9 +26,9 @@ const NavBar1=()=> {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Sign in</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Login
+            <Nav.Link href="#login">Login</Nav.Link>
+            <Nav.Link eventKey={2} href="#Sign-in">
+              Sign in
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
