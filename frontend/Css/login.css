@@ -54,6 +54,7 @@ section .color:nth-child(4){
     height: 350px;
     background: #07bae2;
 }
+
 section .color:nth-child(5){
     top: 250px;
     right: 500px;
@@ -61,3 +62,50 @@ section .color:nth-child(5){
     height: 350px;
     background: #ec67a9;
 }
+
+.box{
+    position: relative;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form h2{
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.form h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100px;
+    height: 4px;
+    background: #fff;
+}
+
