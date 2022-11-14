@@ -5,6 +5,7 @@ const port = 3000;
 
 const placesRoutes = require('./routes/places-routes');
 const app = express();
+// uso de diretorios estaticos
 app.use(express.static('../frontend'));
 app.use( express.static("../frontend/Media"));
 app.use( express.static("../frontend/css"));

@@ -58,7 +58,6 @@ const getplaceByUserId = (req, res, next) => {
     });
     if (!place) {
         return next(new Error('Could not find a place for the provided user id.', 404));
-        //return res.status(404).json({ message: 'Could not find a place for the provided user id.' });
     }
     return res.json({ place });
 }
