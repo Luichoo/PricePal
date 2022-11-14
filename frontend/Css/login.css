@@ -1,34 +1,45 @@
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-section.login.color{
-    position: absolute;
-    filter: blur(150px);
+body{
+    overflow: hidden;
 }
 
-section.login.color:nth-child(1){
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+
+section .color{
+    position: absolute;
+    filter: blur(150px); 
+}
+
+section .color:nth-child(1){
     top:-350px;
     width: 600px;
     height: 600px;
     background: #ff359b;
 }
 
-section.login.color:nth-child(2){
+section .color:nth-child(2){
     bottom:-150px;
     left: 100px;
     width: 500px;
     height: 500px;
-    background: #ff359b;
+    background: #cf5605;
 }
 
-section.login.color:nth-child(3){
-    top:-350px;
-    width: 600px;
-    height: 600px;
-    background: #ff359b;
+section .color:nth-child(3){
+    bottom: 50px;
+    right: 600px;
+    width: 700px;
+    height: 500px;
+    background: #00d2ff;
 }
