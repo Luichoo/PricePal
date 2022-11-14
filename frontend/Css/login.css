@@ -111,7 +111,7 @@ section .color:nth-child(5){
 
 .form .inputBox{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .form .inputBox input{
@@ -121,6 +121,7 @@ section .color:nth-child(5){
     outline: none;
     padding: 10px 20px;
     border-radius: 20px;
+    margin-top: 15px;
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-right: 1px solid rgba(255, 255, 255, 0.4);
@@ -150,7 +151,20 @@ section .color:nth-child(5){
 
 .foot{
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 5px;
+    left: 15px;
     color: #fff;
+}
+
+.error{
+    color: rgb(231, 65, 65);
+    margin-top: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
 }
