@@ -147,3 +147,10 @@ section .color:nth-child(5){
     color: rgb(77, 77, 77);
     font-weight: 600;
 }
+
+.foot{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: #fff;
+}
