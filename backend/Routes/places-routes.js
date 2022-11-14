@@ -4,6 +4,8 @@ const placesControllers = require('../Controllers/places-controller')
 // This is a router, which is a middleware function that handles routes
 
 const router = express.Router();
+//router.get('/', placesControllers.getMedia);
+router.get('/', placesControllers.getRoot);
 
 router.get('/:pid', placesControllers.getplaceById);
 
