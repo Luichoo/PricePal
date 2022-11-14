@@ -10,3 +10,16 @@
 .navbarp {
     color: aliceblue;
 }
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #AEB6BF);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#AEB6BF, #000000);   
+}
