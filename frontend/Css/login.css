@@ -13,33 +13,48 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+    background: linear-gradient(to bottom, #ddbef0, #b4c1fa);
 }
 
 section .color{
     position: absolute;
-    filter: blur(150px); 
+    filter: blur(150px);
 }
 
 section .color:nth-child(1){
-    top:-350px;
+    top: 10px;
+    left: 50px;
     width: 600px;
-    height: 600px;
-    background: #ff359b;
+    height: 200px;
+    background: #e75fe0;
 }
 
 section .color:nth-child(2){
     bottom:-150px;
-    left: 100px;
-    width: 500px;
+    left: 0px;
+    width: 1000px;
     height: 500px;
-    background: #cf5605;
+    background: #05cf9d;
 }
 
 section .color:nth-child(3){
-    bottom: 50px;
-    right: 600px;
+    bottom: 150px;
+    right: 75px;
     width: 700px;
-    height: 500px;
-    background: #00d2ff;
+    height: 400px;
+    background: #e7c381;   
+}
+section .color:nth-child(4){
+    top: 30px;
+    right: 0px;
+    width: 700px;
+    height: 350px;
+    background: #07bae2;
+}
+section .color:nth-child(5){
+    top: 250px;
+    right: 500px;
+    width: 900px;
+    height: 350px;
+    background: #ec67a9;
 }
