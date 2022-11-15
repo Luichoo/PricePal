@@ -49,7 +49,7 @@ const getError404 = (req, res, next) => {
         if (error) {
             throw new HttpError('Could not find a place for the provided place id.', 404);
         } else {
-            return res.status(200).sendFile(path.join(__dirname, "../../frontend/Views/construccion.html"));
+            return res.status(404).sendFile(path.join(__dirname, "../../frontend/Views/construccion.html"));
         }
     })
 
