@@ -3,12 +3,15 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const port = 3000;
 
+
 const placesRoutes = require('./routes/places-routes');
 const app = express();
 // uso de diretorios estaticos
+app.use(bodyParser.json());
 app.use(express.static('../frontend'));
-app.use( express.static("../frontend/Media"));
-app.use( express.static("../frontend/css"));
+app.use(express.static('../frontend/Js'));
+app.use(express.static("../frontend/Media"));
+app.use(express.static("../frontend/css"));
 app.use(placesRoutes);
 
 app.listen(port, () => {
