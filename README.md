@@ -1,10 +1,3 @@
 # WatchPal
- asasasasasa
- s
- as
- as
- a
- sa
- sa
- s
- a
+
+Creada con nodeJs, html, css y bootstrap
