@@ -38,41 +38,37 @@ const getLogin = (req, res, next) => {
 const getRegister = (req, res, next) => {
     const test = path.join(__dirname, "../../frontend/Views/register.html")
     console.log(test);
-    fs.access(test, function(error) {
-        if (error) {
-            throw new HttpError('Could not find a place for the provided place id.', 404);
-        } else {
+
             return res.status(200).sendFile(path.join(__dirname, "../../frontend/Views/register.html"));
-        }
-    })
+
 }
-const getMedia = (req, res, next) => {
-    const test = path.join(__dirname, "../../frontend/Media")
+const getError404 = (req, res, next) => {
+    const test = path.join(__dirname, "../../frontend/Views/construccion.html")
     console.log(test);
     fs.access(test, function(error) {
         if (error) {
             throw new HttpError('Could not find a place for the provided place id.', 404);
         } else {
-            return res.status(200).sendFile(path.join(__dirname, "../../frontend/Media"));
+            return res.status(200).sendFile(path.join(__dirname, "../../frontend/Views/construccion.html"));
         }
     })
 
 };
 
-const getplaceById = (req, res, next) => {
-    const placeid = req.params.pid
-    const place = dummyPlaces.find(p => {
-        return p.id === placeid;
-    });
-    console.log('getplacebyId');
+// const getplaceById = (req, res, next) => {
+//     const placeid = req.params.pid
+//     const place = dummyPlaces.find(p => {
+//         return p.id === placeid;
+//     });
+//     console.log('getplacebyId');
 
-    if (!place) {
+//     if (!place) {
 
-        throw new HttpError('Could not find a place for the provided place id.', 404);
+//         throw new HttpError('Could not find a place for the provided place id.', 404);
 
-    }
-    return res.json({ place });
-};
+//     }
+//     return res.json({ place });
+// };
 const getplaceByUserId = (req, res, next) => {
     const userid = req.params.uid
     const place = dummyPlaces.find(p => {
@@ -83,10 +79,10 @@ const getplaceByUserId = (req, res, next) => {
     }
     return res.json({ place });
 }
-
+exports.getError404 = getError404;
 exports.getRegister = getRegister;
 exports.getLogin = getLogin;
-exports.getMedia = getMedia;
+
 exports.getRoot = getRoot;
-exports.getplaceById = getplaceById;
+// exports.getplaceById = getplaceById;
 exports.getplaceByUserId = getplaceByUserId;

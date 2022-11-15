@@ -15,7 +15,7 @@ app.use(express.static("../frontend/css"));
 app.use(placesRoutes);
 
 app.listen(port, () => {
-    console.log('Server is up and running on port number ' + port);
+    console.log('Server is up and running on http://localhost:' + port);
 });
 
 app.use((error, req, res, next) => {
