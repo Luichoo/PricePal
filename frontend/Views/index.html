@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../Css/index.css" type="text/css">
         <script src="../Js/Index.js"></script>
         <title>PricePal</title>
+        <script src="https://kit.fontawesome.com/8200df50bd.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -19,20 +20,55 @@
                 <li><a href="#">Sign Up</a></li>
             </ul>
         </header>
+
         <div class="banner">
-            <img src="../Media/727414.png" alt="fondo" style="width: 100%;">
+            <img src="../Media/727414.png" alt="fondo" style="width: 100%; opacity: 0.5;">
                 <p class="centered">PricePal</p>
+                <h1 class="centered2">Your best buddy for comparing prices between sites</h1>
         </div>
+
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-basket-shopping fa-5x"></i>
+                <div class="cardInfo">
+                    <h2>WishList</h2>
+                    <h4>Find what you like and keep track of it</h4>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-fire fa-5x"></i>
+                <div class="cardInfo">
+                    <h2>Popular</h2>
+                    <h4>See what the prices are on the most searched items</h4>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-tags fa-5x"></i>
+                <div class="cardInfo">
+                    <h2>On Sale!</h2>
+                    <h4>Check the prices for items currently on sale</h4>
+                </div>
+            </div>
+        </div>
+
         <script type="text/javascript">
             window.addEventListener("scroll", function(){
                 var header = document.querySelector("header");
                 header.classList.toggle("sticky", window.scrollY > 0);
             })
         </script>
+
         <script type="text/javascript">
             window.addEventListener("scroll", function(){
                 var header = document.querySelector("p");
                 header.classList.toggle("sticky2", window.scrollY > 0);
+            })
+        </script>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("h1");
+            header.classList.toggle("sticky2", window.scrollY > 0);
             })
         </script>
     </body>
