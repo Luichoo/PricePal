@@ -12,6 +12,7 @@ const dummyPlaces = [{
     address: '20 W 34th St, New York, NY 10001, United States',
     creator: 'u1'
 }];
+//prueba uwu
 const getRoot = (req, res, next) => {
     const test = path.join(__dirname, "../../frontend/Views/index.html")
     console.log(test);
