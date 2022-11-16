@@ -36,4 +36,22 @@ const postUser = async(req, res, next) => {
         res.status(500).send(err.message);
     }
 };
+const postUserLogin = async(req, res, next) => {
+    const { body } = req;
+    try {
+        const user = await Users.findOne({ username: body.username });
+        if (!user) {
+            return res.status(403).json({ message: 'User does not exist' });
+        }
+        const isMatch = await bcrypt.compare(body.password, user.password);
+        if (!isMatch) {
+            return res.status(403).json({ message: 'Wrong password' });
+        }
+        const signed = await signToken(user._id);
+        res.status(201).send(signed);
+    } catch (err) {
+        res.status(500).send(err.message);
+    }
+}
+exports.postUserLogin = postUserLogin;
 exports.postUser = postUser;
