@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const expressjwt = require('express-jwt');
-const signToken = (_id) => jwt.sign({ _id }, 'secreto');
+const signToken = (_id) => jwt.sign({ _id }, process.env.TOKEN_SECRET);
 
-// mongo connectioon
+// mongo connection
 
-const mongostring = 'mongodb+srv://Usertest:1234@clustertests.kys2ftm.mongodb.net/Watchpal?retryWrites=true&w=majority';
+const mongostring = process.env.MONGOurl;
 if (mongoose.connect(mongostring)) {
     console.log('Connected to MongoDB');
 } else {
