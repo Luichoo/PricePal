@@ -43,4 +43,20 @@ describe('Test the register path', () => {
             done();
             });
         });
+        it('should return the 201 code with the jwt',  (done) => {
+            const testRegister =() => chai.request(app)
+            .post('/register')
+            .set('content-type', 'application/json')
+            .send({
+                username: "test4",
+                password: "testpassword"
+            })
+            .end((err, res) => {
+                res.should.have.status(201);
+                expect(res).to.be.string;
+                done();
+            });
+            testRegister();
+            
+        });
 });
