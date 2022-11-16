@@ -1,4 +1,4 @@
-const HttpError = require('../Models/http-error');
+const HttpError = require('../Models/http-error').default;
 const fs = require('fs');
 const path = require('path');
 const dummyPlaces = [{
@@ -39,7 +39,7 @@ const getRegister = (req, res, next) => {
     const test = path.join(__dirname, "../../frontend/Views/register.html")
     console.log(test);
 
-            return res.status(200).sendFile(path.join(__dirname, "../../frontend/Views/register.html"));
+    return res.status(200).sendFile(path.join(__dirname, "../../frontend/Views/register.html"));
 
 }
 const getError404 = (req, res, next) => {
