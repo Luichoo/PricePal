@@ -48,6 +48,7 @@ const postUserLogin = async(req, res, next) => {
             return res.status(403).json({ message: 'Wrong password' });
         }
         const signed = await signToken(user._id);
+        console.log('body.username: ' + body.username);
         res.status(201).send(signed);
     } catch (err) {
         res.status(500).send(err.message);
