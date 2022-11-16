@@ -1,23 +1,22 @@
-// const addFormListener = () => {
+const addformListener = () => {
+    const userForm = document.getElementById('user-form')
+    console.log(userForm)
+    userForm.onsubmit = async(e) => {
+        e.preventDefault()
+        const formData = new FormData(userForm)
+        const data = Object.fromEntries(formData.entries())
+        await fetch('/login', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-type': 'application/json'
+            }
+        })
+        
+        
+    }
+}
 
-//     const userform = document.getElemsentById('login-form');
-//     userform.onsubmit = async(e) => {
-//         e.preventDefault();
-//         const formData = new FormData(userform);
-//         const data = Object.fromEntries(formData);
-//         console.log(data);
-//         const response = await fetch('/login', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: JSON.stringify(data)
-//         });
-//         const json = await response.json();
-//         if (json.success) {
-//             window.location.href = '/home';
-//         } else {
-//             alert(json.message);
-//         }
-//     }
-// };
+window.onload = () => {
+    addformListener()
+}
