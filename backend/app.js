@@ -1,11 +1,8 @@
 require('dotenv').config({path: `${__dirname}/.env`});
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
 
 const port = process.env.PORT || 3000;
-
-console.log(process.env)
 
 const placesRoutes = require('./routes/places-routes');
 const usersRoutes = require('./routes/users-routes');
