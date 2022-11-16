@@ -11,6 +11,6 @@ router.get('/login', placesControllers.getLogin);
 router.get('/register', placesControllers.getRegister);
 // router.get('/:pid', placesControllers.getplaceById);
 
-router.get('/user/:uid', placesControllers.getplaceByUserId);
+//router.get('/user/:uid', placesControllers.getplaceByUserId);
 router.get('*', placesControllers.getError404);
 module.exports = router;
