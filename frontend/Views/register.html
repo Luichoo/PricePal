@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PricePal | Sign Up</title>
         <link rel="stylesheet" href="../Css/login.css" type="text/css">
-
+        <script src="../js/register.js"></script>
     </head>
     <body>
         <section>
@@ -18,18 +18,18 @@
                 <div class="container">
                     <div class="form">
                         <h2>Sign Up Today</h2>
-                        <form>
+                        <form id="user-form">
                             <div class="inputBox">
-                                <input type="text" id="username" placeholder="New Username">
+                                <input type="text" id="username" name="username" placeholder="New Username" />
                             </div>
                             <div class="error hide" id="errorUser">
                                 <p>User already exists</p>
                             </div>
                             <div class="inputBox">
-                                <input type="password" id="password" placeholder="Password">
+                                <input type="password" id="password" name="password" placeholder="Password">
                             </div>
                             <div class="inputBox">
-                                <input type="password" id="password2" placeholder="Confirm Password">
+                                <input type="password" id="password2" name="password2" placeholder="Confirm Password" />
                             </div>
                             <div class="error hide" id="errorPassword">
                                 <p>Passwords must be the same</p>
@@ -38,7 +38,7 @@
                                 <p>Passwords must be at least 5 characters long</p>
                             </div>
                             <div class="inputBox">
-                                <input type="submit"  value="Sign Up">
+                                <input type="submit"  value="Sign Up" />
                             </div>
                         </form>
                     </div>
