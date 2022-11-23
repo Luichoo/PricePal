@@ -5,15 +5,15 @@ const addformListener = () => {
         e.preventDefault()
         const formData = new FormData(userForm)
         const data = Object.fromEntries(formData.entries())
-        await fetch('/login', {
+        console.log(await fetch('/login', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
                 'Content-type': 'application/json'
             }
-        })
-        
-        
+        }))
+
+
     }
 }
 
