@@ -5,6 +5,7 @@ const placesControllers = require('../Controllers/places-controller')
 
 const router = express.Router();
 router.get('/', placesControllers.getRoot);
+// router.get('/:id',)
 router.get('/login', placesControllers.getLogin);
 router.get('/register', placesControllers.getRegister);
 router.get('*', placesControllers.getError404);

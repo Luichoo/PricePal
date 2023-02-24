@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../Css/register.css">
+        
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+		<title>Register</title>
+        <!-- <style>
+            .bg_img{
+    background: url(../Media/cloudy_register.png);
+    background-position: center center;
+}
+        </style> -->
+	</head>
+
+	<body>
+		<div class="container mt-5 bg-primary rounded shadow w-75 mb-5">
+			<div class="row align-items-stretch">
+				<div class="col bg_img d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
+
+                </div>
+				<div class="col bg-white rounded-end p-4">
+					<div class="text-end">
+						<h1 class=" h1 display-2 p-3">PricePal©</h1>
+					</div>
+					<h2 class=" text-center py-5 display-6">Register</h2>
+					<form action="#">
+						<div class="mb-4">
+							<div class="mb-4 form-floating">
+								
+								<input
+									type="email"
+									class="form-control"
+									name="email"
+									placeholder="Email" 
+                                    id="email"/>
+                                    <label for="email" class="form-label">Email</label>
+							</div>
+                            
+							<div class="mb-4 form-floating">
+								
+								<input
+									type="text"
+									class="form-control"
+									name="username"
+									placeholder="username" 
+                                    id="username"/>
+                                 <label for="username" class="form-label">Username</label>   
+							</div>
+							<div class="mb-4 form-floating">
+
+								<input
+									type="password"
+									class="form-control"
+									name="password"
+									placeholder="Password" 
+                                    id="password"/>
+                                    
+                                     <label for="password" class="form-label">Password</label>
+
+							</div>
+                           
+
+							<div class="mb-4 form-floating">
+								
+								<input
+									type="password"
+									class="form-control"
+									name="confirm-password"
+									placeholder="Repeat Password"
+                                    id="confirm-password"
+                                     />
+
+                                    <label for="password" class="form-label">Repeat Password</label>
+							</div>
+
+							<span id="message"></span>
+							<div class="d-grid justify-content-center align-content-center">
+								<button type="submit" class="btn btn-dark mt-4">
+									Iniciar Sesión
+								</button>
+							</div>
+                            <div class="my-3">
+                                <span>Already with an account? <a href="#" class="text-decoration-none text-info fw-semibold " >Login<a></span>
+
+                            </div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+        <div class="foot">
+            <p><a href="#" style="text-decoration: none; color:#fff;">PricePal© 2022</a> </p>
+        </div>
+        <script>
+            const togglePassword = document
+                .querySelector('#togglePassword');
+      
+            const password = document.querySelector('#password');
+      
+            togglePassword.addEventListener('click', () => {
+      
+                // Toggle the type attribute using
+                // getAttribure() method
+                const type = password
+                    .getAttribute('type') === 'password' ?
+                    'text' : 'password';
+                      
+                password.setAttribute('type', type);
+      
+                // Toggle the eye and bi-eye icon
+                this.classList.toggle('bi-eye');
+            });
+        </script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"></script>
+	</body>
+</html>
