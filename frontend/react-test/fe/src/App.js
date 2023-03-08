@@ -2,20 +2,13 @@ import logo from './logo.svg';
 
 import './App.css';
 import Navbar from './components/navbar/Navbar';
-
+import Footer from './components/footer';
 
 
 function App() {
   return (
-    <div>
-     <div>
-        <h1>React Test</h1>
-      </div>
-       <Navbar/>
-   
-    </div>
-      
-
+  
+    <Footer/>
      
   );
 }
