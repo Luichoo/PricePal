@@ -1,4 +1,4 @@
-const HttpError = require('../Models/http-error');
+
 const fs = require('fs');
 const path = require('path');
 
