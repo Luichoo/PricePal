@@ -20,7 +20,7 @@ function Home() {
       </header> */}
 
       <div className="banner">
-      <p className="centered">PricePal</p>
+      <p className="centered">PricePaw</p>
       <br />
         <h1 className="centered2">
           Your best buddy for comparing prices between sites

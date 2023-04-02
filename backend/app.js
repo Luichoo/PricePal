@@ -1,3 +1,5 @@
+var util= require('util');
+var encoder = new util.TextEncoder('utf-8');
 require('dotenv').config({path: `${__dirname}/.env`});
 const express = require('express');
 const bodyParser = require('body-parser');
