@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faUserEdit, faShippingFast, faBackspace, faFileAlt } from '@fortawesome/free-solid-svg-icons'
 // import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 // import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -14,10 +14,10 @@ function Footer() {
 
             <ul className="list-unstyled mb-0">
               <li>
-                <a href="#!" className="text-white"><FontAwesomeIcon icon={faBook} className="fa-fw me-2" />Registrate</a>
+                <Link to="/register" className="text-white"><FontAwesomeIcon icon={faBook} className="fa-fw me-2" />Registrate</Link>
               </li>
               <li>
-                <a href="#!" className="text-white"><FontAwesomeIcon icon={faUserEdit} className="fa-fw me-2" />Iniciar sesión</a>
+                <Link to="/login" className="text-white"><FontAwesomeIcon icon={faUserEdit} className="fa-fw me-2" />Iniciar sesión</Link>
               </li>
             </ul>
           </div>
@@ -27,7 +27,7 @@ function Footer() {
 
             <ul className="list-unstyled">
               <li>
-                <a href="#!" className="text-white"><FontAwesomeIcon icon={faShippingFast} className="fa-fw me-2" />Inicio</a>
+                <Link to="/" className="text-white"><FontAwesomeIcon icon={faShippingFast} className="fa-fw me-2" />Inicio</Link>
               </li>
               <li>
                 <a href="#!" className="text-white"><FontAwesomeIcon icon={faBackspace} className="fa-fw me-2" />Quienes somos</a>

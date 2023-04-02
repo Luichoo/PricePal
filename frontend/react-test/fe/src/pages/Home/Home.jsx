@@ -1,13 +1,13 @@
 import React from "react";
-import "./Home.css";
+// import "./Home.css";
 import "./scripts.js";
 function Home() {
   return (
-    <div className="body">
+    <div className="bd">
 
-      <header>
+      {/* <header>
         <a href="/" className="logo">
-          PricePal
+          PricePaw
         </a>
         <ul>
           <li>
@@ -17,7 +17,7 @@ function Home() {
             <a href="/register">Sign Up</a>
           </li>
         </ul>
-      </header>
+      </header> */}
 
       <div className="banner">
       <p className="centered">PricePal</p>
