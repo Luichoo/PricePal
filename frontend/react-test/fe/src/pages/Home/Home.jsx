@@ -5,19 +5,6 @@ function Home() {
   return (
     <div className="bd">
 
-      {/* <header>
-        <a href="/" className="logo">
-          PricePaw
-        </a>
-        <ul>
-          <li>
-            <a href="/login">Log In</a>
-          </li>
-          <li>
-            <a href="/register">Sign Up</a>
-          </li>
-        </ul>
-      </header> */}
 
       <div className="banner">
       <p className="centered">PricePaw</p>
